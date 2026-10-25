@@ -7,7 +7,8 @@ for (let arr of args) {
   combinedObject.users = [...combinedObject.users, ...arr];
 }
 
-combinedObject.merge_date = Date.today().toString("M/d/yyyy");
+const today = new Date();
+combinedObject.merge_date = Date.today(22).toString("M/d/yyyy");
 return combinedObject;
 
 
